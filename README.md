@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Pro Shop Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based frontend for the Pro Shop e-commerce platform.
+
+## Overview
+
+This frontend provides a responsive and interactive user interface for the Pro Shop e-commerce application. It connects to the Django backend API to display products, handle user authentication, manage shopping carts, and process orders.
+
+## Technology Stack
+
+- **React 17**: UI library
+- **Redux**: State management
+- **React Router**: Navigation
+- **React Bootstrap**: UI components
+- **Axios**: API requests
+
+## Project Structure
+
+- `src/`
+  - `actions/`: Redux action creators
+  - `components/`: Reusable UI components
+  - `constants/`: Application constants
+  - `reducers/`: Redux reducers
+  - `screens/`: Page components
+  - `App.js`: Main application component
+  - `store.js`: Redux store configuration
+
+## Features
+
+- Product browsing and search
+- Product details view
+- User authentication (login/register)
+- Shopping cart functionality
+- Checkout process
+- Order history
+- Admin product management
+
+## Setup and Installation
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd pro-shop-frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+The application will be available at `http://localhost:3000/`.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start`: Run the development server
+- `npm test`: Run tests
+- `npm run build`: Build for production
+- `npm run eject`: Eject from Create React App
 
-### `npm start`
+## Backend Connection
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application is configured to connect to the Django backend at `http://127.0.0.1:8000/` through the proxy setting in `package.json`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Development
 
-### `npm test`
+### Adding New Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Create new components in the `components/` directory
+2. Add new screens in the `screens/` directory
+3. Define new actions in the `actions/` directory
+4. Update reducers in the `reducers/` directory
+5. Update routes in `App.js`
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For production deployment:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Build the application: `npm run build`
+2. Deploy the contents of the `build` directory to your web server
+3. Ensure the backend API is properly configured and accessible
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT License](LICENSE)
